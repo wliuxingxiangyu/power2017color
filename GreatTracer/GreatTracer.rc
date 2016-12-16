@@ -1,0 +1,521 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GreatTracer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GreatTracer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GreatTracer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "GreatTracer，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2015",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_GREATTRACER_DIALOG DIALOGEX 0, 0, 375, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Great Tracer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,374,145
+END
+
+IDD_VIEW_DIALOG DIALOGEX 0, 0, 661, 390
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "Project View"
+MENU IDR_VIEW_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RENDER,"Static",SS_BLACKFRAME,0,0,660,344
+    LTEXT           "X:",IDC_STATIC,522,349,8,8
+    LTEXT           "Y:",IDC_STATIC,522,358,8,8
+    LTEXT           "Z:",IDC_STATIC,522,366,8,8
+    LTEXT           "静态",IDC_STATIC_X,534,349,33,8
+    LTEXT           "静态",IDC_STATIC_Y,534,358,33,8
+    LTEXT           "静态",IDC_STATIC_Z,534,366,34,8
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,10,360,400,14
+    LTEXT           "MindBm",IDC_STATIC_MINDB,11,364,25,8
+    LTEXT           "MaxdBm",IDC_STATIC_MAXDB,376,363,28,8
+    LTEXT           "静态",IDC_STATIC_FPS,11,349,325,8
+END
+
+IDD_TX_DIALOG DIALOGEX 0, 0, 344, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tx Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,133,50,14
+    PUSHBUTTON      "取消",IDCANCEL,279,133,50,14
+    LTEXT           "Short Description:",IDC_STATIC,27,15,58,8
+    LTEXT           "Height(km):",IDC_STATIC,50,37,38,8
+    LTEXT           "Carrier Frequency(GHz):",IDC_STATIC,5,60,80,8
+    LTEXT           "Input Power(dBm):",IDC_STATIC,23,84,62,8
+    LTEXT           "Antennas Type:",IDC_STATIC,197,14,52,8
+    LTEXT           "WaveForm Choose:",IDC_STATIC,184,34,64,8
+    EDITTEXT        IDC_EDIT_DESCRIPTION,88,12,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TX_HEIGHT,88,35,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CARRIERFRE,88,57,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUTPOWER,88,81,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WAVEFORM,249,32,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANTE,249,13,90,14,ES_AUTOHSCROLL
+    LTEXT           "纬度",IDC_STATIC,220,58,17,8
+    EDITTEXT        IDC_EDIT_LAT,249,54,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANGLE,251,82,85,14,ES_AUTOHSCROLL
+    LTEXT           "仰角",IDC_STATIC,222,84,17,8
+    EDITTEXT        IDC_EDIT_ALLOWLOSS,90,102,88,14,ES_AUTOHSCROLL
+    LTEXT           "允许传输损耗(dB)",IDC_STATIC,21,106,62,8
+    EDITTEXT        IDC_EDIT_TIME,251,104,82,14,ES_AUTOHSCROLL
+    LTEXT           "时间百分数(%)",IDC_STATIC,195,105,54,8
+END
+
+IDD_RX_DIALOG DIALOGEX 0, 0, 316, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rx Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,89,50,14
+    PUSHBUTTON      "取消",IDCANCEL,262,89,50,14
+    LTEXT           "Height:",IDC_STATIC,34,41,24,8
+    LTEXT           "Description:",IDC_STATIC,20,21,39,8
+    EDITTEXT        IDC_EDIT_RX_PZ_DES,61,18,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT__RX_PZ_Z,61,39,96,14,ES_AUTOHSCROLL
+END
+
+IDD_ANTE_DIALOG DIALOGEX 0, 0, 316, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Antenna Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,145,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,145,50,14
+    EDITTEXT        IDC_STARTANGLE_EDIT,73,23,71,14,ES_AUTOHSCROLL
+    LTEXT           "起始角(°)：",IDC_STATIC,29,26,42,8
+    LTEXT           "终止角(°)：",IDC_STATIC,30,55,42,8
+    EDITTEXT        IDC_ENDANGLE_EDIT,73,51,71,14,ES_AUTOHSCROLL
+    LTEXT           "功率增益(dB)：",IDC_STATIC,18,86,54,8
+    EDITTEXT        IDC_ANTEGAIN_EDIT,74,82,71,14,ES_AUTOHSCROLL
+END
+
+IDD_POLYGON_TX_DIALOG DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Polygon Tx Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,82,148,50,14
+    PUSHBUTTON      "取消",IDCANCEL,231,148,50,14
+    LTEXT           "Height(m):",IDC_STATIC,44,77,35,8
+    EDITTEXT        IDC_POLYGON_HEIGHT_EDIT,81,74,68,14,ES_AUTOHSCROLL
+    LTEXT           "间隔(space)(m):",IDC_STATIC,26,107,54,8
+    EDITTEXT        IDC_POLYGON_SPACE_EDIT,80,104,68,14,ES_AUTOHSCROLL
+    LTEXT           "天线类型:",IDC_STATIC,188,76,36,8
+    EDITTEXT        IDC_POLYGON_ANTE_EDIT,225,74,68,14,ES_AUTOHSCROLL
+    LTEXT           "波形类型:",IDC_STATIC,187,104,36,8
+    EDITTEXT        IDC_POLYGON_WAVEFORM_EDIT,224,100,68,14,ES_AUTOHSCROLL
+    LTEXT           "发射功率(dBm):",IDC_STATIC,171,22,54,8
+    EDITTEXT        IDC_POLYGON_POWER_EDIT,226,19,68,14,ES_AUTOHSCROLL
+    LTEXT           "载波频率(GHz):",IDC_STATIC,171,50,54,8
+    EDITTEXT        IDC_POLYGON_CARRIERFRE_EDIT,225,47,69,14,ES_AUTOHSCROLL
+    LTEXT           "矩形长度(m):",IDC_STATIC,33,21,46,8
+    EDITTEXT        IDC_POLYGON_length_EDIT,81,18,68,14,ES_AUTOHSCROLL
+    LTEXT           "矩形宽度(m):",IDC_STATIC,33,51,46,8
+    EDITTEXT        IDC_POLYGON_WIDTH_EDIT,80,48,68,14,ES_AUTOHSCROLL
+END
+
+IDD_POLYGON_RX_DIALOG DIALOGEX 0, 0, 316, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Polygon Rx Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,51,116,50,14
+    PUSHBUTTON      "取消",IDCANCEL,222,116,50,14
+    LTEXT           "Height(m):",IDC_STATIC,179,33,35,8
+    EDITTEXT        IDC_POLYGON_RX_HEIGHT_EDIT,215,30,71,14,ES_AUTOHSCROLL
+    LTEXT           "space(km):",IDC_STATIC,179,60,36,8
+    EDITTEXT        IDC_POLYGON_RX_SPACE_EDIT,215,57,71,14,ES_AUTOHSCROLL
+    LTEXT           "矩形长度(km):",IDC_STATIC,26,35,50,8
+    EDITTEXT        IDC_POLYGON_RX_length_EDIT,73,32,71,14,ES_AUTOHSCROLL
+    LTEXT           "矩形宽度(km):",IDC_STATIC,26,62,50,8
+    EDITTEXT        IDC_POLYGON_RX_WIDTH_EDIT,73,58,71,14,ES_AUTOHSCROLL
+END
+
+IDD_CALLOG_DIALOG DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculation log:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,302,168,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+END
+
+IDD_ENVIRONMENT DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Environment"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "环境描述",IDC_STATIC,34,57,41,8
+    LTEXT           "水汽密度(g/m3)",IDC_STATIC,29,116,54,10
+    EDITTEXT        IDC_Density,105,113,62,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Describe,105,53,59,14,ES_AUTOHSCROLL
+    LTEXT           "(选择描述序号：陆地1，冷海2，暖海3，其他0)",IDC_STATIC,59,77,173,8
+    PUSHBUTTON      "确定",IDOK,212,142,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GreatTracer.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "GreatTracer.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_GREATTRACER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 326
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_VIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 660
+        BOTTOMMARGIN, 381
+    END
+
+    IDD_TX_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_RX_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_ANTE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_POLYGON_TX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_POLYGON_RX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CALLOG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_ENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU
+BEGIN
+    POPUP "Project"
+    BEGIN
+        MENUITEM "New",                         ID_PROJECT_NEW
+        MENUITEM "Open",                        ID_PROJECT_OPEN
+        MENUITEM "Save",                        ID_PROJECT_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_PROJECT_CLOSE
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Edit",                        ID_EDIT
+    MENUITEM SEPARATOR
+    POPUP "View"
+    BEGIN
+        MENUITEM "Project View",                ID_VIEW_PROJECTVIEW
+    END
+    MENUITEM SEPARATOR
+    POPUP "OutPut"
+    BEGIN
+        MENUITEM "Open Folder",                 ID_Menu
+    END
+    MENUITEM SEPARATOR
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+IDR_VIEW_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Dxf",                         ID_FILE_DXF
+        MENUITEM "City",                        ID_FILE_CITY
+        POPUP "IMG"
+        BEGIN
+            MENUITEM "Jpg",                         ID_IMG_JPG
+            MENUITEM "Tif",                         ID_IMG_TIF
+            MENUITEM "Bmp",                         ID_IMG_BMP
+        END
+        MENUITEM "TIN",                         ID_FILE_TIN
+        MENUITEM "DEM",                         ID_FILE_DEM
+    END
+    MENUITEM SEPARATOR
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "绘制TIN的多点",                    ID_EDIT_TIN
+        MENUITEM SEPARATOR
+        MENUITEM "生成TIN",                       ID_EDIT_MODELTIN
+        MENUITEM "TIN纹理",                       ID_EDIT_TIN32820
+    END
+    MENUITEM SEPARATOR
+    POPUP "View"
+    BEGIN
+        MENUITEM "Render",                      ID_VIEW_RENDER
+        MENUITEM SEPARATOR
+        MENUITEM "Normal",                      ID_VIEW_NORMAL
+        MENUITEM SEPARATOR
+        MENUITEM "中心视图",                        ID_VIEW_32819
+    END
+    MENUITEM SEPARATOR
+    POPUP "OutPut"
+    BEGIN
+        MENUITEM "Power Path",                  ID_OUTPUT_POWERPATH
+        MENUITEM "Render Output",               ID_OUTPUT_RENDEROUTPUT
+    END
+    MENUITEM SEPARATOR
+    POPUP "Set"
+    BEGIN
+        POPUP "Transmmits"
+        BEGIN
+            MENUITEM "Points",                      ID_TRANSMMITS_POINTS
+            MENUITEM "Polygons",                    ID_TRANSMMITS_POLYGONS
+            MENUITEM "Circle",                      ID_TRANSMMITS_CIRCLE
+        END
+        POPUP "Receivers"
+        BEGIN
+            MENUITEM "Points",                      ID_RECEIVERS_POINTS
+            MENUITEM "Polygons",                    ID_RECEIVERS_POLYGONS
+            MENUITEM "Circle",                      ID_RECEIVERS_CIRCLE
+        END
+        MENUITEM "Antenna",                     ID_SET_ANTENNA
+        MENUITEM "Environment",                 ID_SET_ENVIRONMENT
+    END
+    MENUITEM SEPARATOR
+    POPUP "clear"
+    BEGIN
+        MENUITEM "Point Tx",                    ID_CLEAR_POINTTX
+        MENUITEM "Polygon Tx",                  ID_CLEAR_POLYGONTX
+        MENUITEM SEPARATOR
+        MENUITEM "Point Rx",                    ID_CLEAR_POINTRX
+        MENUITEM "Polygon Rx",                  ID_CLEAR_POLYGONRX
+        MENUITEM SEPARATOR
+        MENUITEM "TIN",                         ID_CLEAR_TIN
+        MENUITEM SEPARATOR
+        MENUITEM "Path",                        ID_CLEAR_PATH
+        MENUITEM SEPARATOR
+        MENUITEM "Render",                      ID_CLEAR_RENDER
+        MENUITEM "ALL",                         ID_CLEAR_ALL
+    END
+    MENUITEM SEPARATOR
+    POPUP "example"
+    BEGIN
+        MENUITEM "PathExample",                 ID_EXAMPLE_PATHEXAMPLE
+        MENUITEM "RenderExample",               ID_EXAMPLE_RENDEREXAMPLE
+    END
+    MENUITEM SEPARATOR
+    POPUP "test"
+    BEGIN
+        MENUITEM "test1",                       ID_TEST_TEST1
+        MENUITEM "Range",                       ID_TEST_RANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLORAMP            BITMAP                  "res\\Color.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 GreatTracer(&A)..."
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GreatTracer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
