@@ -6,7 +6,7 @@
 
 #include "gl/gl.h"
 #include "gl/glu.h"
-#include "glaux.h"
+#include "gl/glaux.h"
 #include "resource.h"
 #include "ScaleVariable.h"
 #include "vector"

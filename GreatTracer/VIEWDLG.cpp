@@ -1489,12 +1489,15 @@ void CVIEWDLG::OnTestRange()
 	CArray <RxInfo> RangePP;//±ß½ç
 	int count=0;
 	for(int i=0;i<72;i++){
-	RxInfo rx;
-	rx.Pos.y=y+rmin*cos(angle/180*pi)*sin(pi*i/36);
-	rx.Pos.x=x+rmin*cos(angle/180*pi)*cos(pi*i/36);
-	rx.Pos.z=z+rmin*sin(angle/180*pi);
-	rx.RangeR=rmin;
-	RxInfoSet.Add(rx);
+		for (int angle = 0; angle < 90; angle+=5) {
+			RxInfo rx;
+			rx.Pos.y = y + rmin*cos(angle / 180 * pi)*sin(pi*i / 36);
+			rx.Pos.x = x + rmin*cos(angle / 180 * pi)*cos(pi*i / 36);
+			rx.Pos.z = z + rmin*sin(angle / 180 * pi);
+			rx.RangeR = rmin;
+			RxInfoSet.Add(rx);
+		}
+
 	}
 	//EarthStation ear;
 	//ear.getRange(TxInfoSet, RxInfoSet);
